@@ -1,0 +1,74 @@
+page-login {
+  .bg-login {
+    background-image: url("../../assets/imgs/background-login.png");
+    background-size: cover;
+  }
+
+  .div-inputs {
+    height: 550px;
+    width: 90%;
+    background: #fbf5e9;
+    margin-left: 5%;
+    margin-top: 15%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    position: fixed;
+  }
+
+  ion-list{
+    width: 90%;
+    margin-left: 5% !important;
+  }
+
+  ion-input{
+    font-weight: 500;
+    font-size: 20px
+  }
+
+  .list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child{
+    border-bottom-color: #9c9c9c;
+    box-shadow: inset 0 -1px 0 0 #9c9c9c;
+  }
+
+  .forget-pass{
+    margin-left: 55%;
+    letter-spacing: .7px;
+    font-weight: 500;
+  }
+
+  .login-btn{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+    color: #fb8c00;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 60px;
+    border: 2px solid #fb8c00;
+  }
+
+  .not-registered{
+    letter-spacing: .7px;
+    font-weight: 500;
+  }
+
+  .register-btn{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 60px;
+    background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+
+  }
+
+}

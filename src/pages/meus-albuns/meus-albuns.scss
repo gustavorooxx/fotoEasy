@@ -1,0 +1,48 @@
+page-meus-albuns {
+  .title-page{
+    position: absolute;
+    margin-top: -23%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+
+  .card-size{
+    margin-top: 6%;
+    border-radius: 5px;
+    height: 100px;
+    width: 90%;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5%;
+  }
+
+  .backgroundImage{
+    background-image: url('../../assets/imgs/foto1.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .col8-style{
+    background: white ; border-radius:5px; padding: 0px 10px 0px 10px;
+  }
+
+  .title-album{
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .toque{
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+  }
+
+  .question-icon{
+    position: absolute;
+    margin-top: -47%;
+    margin-left: 85%;
+}
+
+}

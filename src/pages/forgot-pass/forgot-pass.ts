@@ -1,23 +1,20 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-
 @IonicPage({
-  name: 'tabs-page'
-
-  })
-
-@Component({
-  selector: 'page-tabs',
-  templateUrl: 'tabs.html'
+  name: 'forgot-pass'
 })
-export class TabsPage {
-
-  tab1Root = 'home-page';
-
-
+@Component({
+  selector: 'page-forgot-pass',
+  templateUrl: 'forgot-pass.html',
+})
+export class ForgotPassPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ForgotPassPage');
+  }
+
 }

@@ -3,21 +3,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
 @IonicPage({
-  name: 'tabs-page'
-
-  })
-
-@Component({
-  selector: 'page-tabs',
-  templateUrl: 'tabs.html'
+  name: 'meus-albuns-page'
 })
-export class TabsPage {
+@Component({
+  selector: 'page-meus-albuns',
+  templateUrl: 'meus-albuns.html',
+})
+export class MeusAlbunsPage {
 
-  tab1Root = 'home-page';
-
-
+  step = 0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad MeusAlbunsPage');
+  }
+
 }

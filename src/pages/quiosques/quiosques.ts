@@ -2,22 +2,21 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
+
 @IonicPage({
-  name: 'tabs-page'
-
-  })
-
-@Component({
-  selector: 'page-tabs',
-  templateUrl: 'tabs.html'
+  name: 'quiosques-page'
 })
-export class TabsPage {
-
-  tab1Root = 'home-page';
-
-
+@Component({
+  selector: 'page-quiosques',
+  templateUrl: 'quiosques.html',
+})
+export class QuiosquesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad QuiosquesPage');
+  }
+
 }

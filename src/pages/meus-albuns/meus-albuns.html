@@ -1,0 +1,51 @@
+<ion-content>
+
+
+
+  <!-- PAGE 1 -->
+  <!-- TOQUE NO ICONE + -->
+  <div *ngIf="step == 0">
+  <app-header></app-header>
+  <!-- TITLE PAGE -->
+  <h1 padding class="title-page">Meus Álbuns</h1>
+  <div style="margin-top: 30%;" >
+    <!-- QUESTION ICON -->
+    <div><img class="question-icon" src="../../assets/imgs/question.png" ></div>
+
+    <!-- IMAGE ADD ALBUM -->
+    <div [navPush]="'add-album-page'">
+    <div style="text-align: center"><img src="../../assets/imgs/imgSimboloMarca.png" alt=""></div>
+    <div style="padding: 10px 60px 10px 60px;" >
+    <p class="toque"> Toque no ícone <b style="font-size: 25px">+</b> abaixo para inserir um Álbum de Fotos</p>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+  <!-- PAGE 2 -->
+  <!-- ALBUNS CARDS -->
+  <div *ngIf="step == 1">
+  <app-header></app-header>
+  <!-- TITLE PAGE -->
+  <h1 padding class="title-page">Meus Álbuns</h1>
+    <ion-row class="card-size">
+      <ion-col col-4 class="backgroundImage">
+
+
+      </ion-col>
+
+      <ion-col class="col8-style" col-8 style=" ">
+        <p class="title-album">Minhas Férias no Rio de Janeiro</p>
+        <small>Total de fotos</small>
+        <br>138
+      </ion-col>
+
+    </ion-row>
+  </div>
+
+
+
+</ion-content>

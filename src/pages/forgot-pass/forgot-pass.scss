@@ -1,0 +1,48 @@
+page-forgot-pass {
+
+  //HEADER CLASSES
+  ion-header{
+    height: 70px;
+    text-align: center;
+  }
+
+  .toolbar-title{
+    margin-top: 5%;
+    margin-right: 15%;
+
+  }
+
+  ion-icon{
+    font-size: 30px;
+    color: #9c9c9c;
+    margin-left: -90%;
+  }
+
+  .back-button.show-back-button{
+    margin-top: 5%;
+  }
+//////////////////////*****************************////////////////////////////////************************////////////////////////
+
+
+.submit-btn{
+  margin-left: 5%;
+  width: 95%;
+  text-align: center;
+  margin-top: 10%;
+  padding: 18px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  height: 60px;
+  background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+
+}
+
+::placeholder{
+  color: #000 !important;
+}
+
+
+}

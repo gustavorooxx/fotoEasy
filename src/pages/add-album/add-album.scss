@@ -1,0 +1,31 @@
+page-add-album {
+
+  .item-input ion-input, .item-input ion-textarea{
+
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+
+  .add-photos{
+    width: 100px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .add-size{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 43px;
+    position: absolute;
+  }
+
+  .text-card{
+    font-size: 12px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20%;
+    color: gray;
+  }
+
+}

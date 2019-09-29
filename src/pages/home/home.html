@@ -1,17 +1,36 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+
+<app-header> </app-header>
+<h1 padding class="title-page">Foto Easy</h1>
+<!-- QUESTION ICON -->
+<div><img class="question-icon" src="../../assets/imgs/question.png" ></div>
+<!-- MY ALBUNS -->
+<div [navPush]="'meus-albuns-page'" class="my-albuns-btn" > <img style="margin-right: 3%;" src="../../assets/imgs/icQuiosqueBranco.png" > Meus Álbuns</div>
+
+<!-- MAP -->
+
+<div style="z-index: -999999; position: absolute;" > <img style="height: 365px; width: 430px;" src="../../assets/imgs/mapa.png" >
+</div>
+
+<!-- MY ORDERS -->
+<div padding style="margin-top: 370px"><p class="my-orders">Meus pedidos</p></div>
+<!-- CARD -->
+<div class="card-style">
+<ion-row style="height: 140px; background: white; border-radius: 5px" >
+  <ion-col col-4 class="backgroundImage">
+
+  </ion-col>
+
+  <ion-col col-8>
+  <div padding>
+  <h6 style="font-size: 20px; font-weight: 500;">Minhas férias no <br> Rio de Janeiro</h6>
+  <p>R$ 138 </p>
+  <p style="color: orange" >Aguardando pagamento</p>
+  </div>
+
+  </ion-col>
+</ion-row>
+
+</div>
 </ion-content>

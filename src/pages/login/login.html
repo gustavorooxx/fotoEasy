@@ -1,0 +1,42 @@
+<ion-content class="bg-login">
+
+<div class="div-inputs" >
+
+<!-- LOGIN LOGO -->
+<div style="text-align:center; "> <img style="margin-top: 10%; margin-bottom: 5%;" src="../../assets/imgs/logo.png" ></div>
+
+<ion-list>
+    <ion-item class="no-bg" >
+
+
+      <ion-icon name="md-person" item-left class="gray"></ion-icon>
+      <ion-input class="gray" type="email" placeholder="E-mail" ></ion-input>
+
+
+    </ion-item>
+    </ion-list>
+
+    <ion-list>
+    <ion-item class="no-bg">
+
+        <ion-icon name="ios-key" item-left class="gray"></ion-icon>
+        <ion-input class="gray" type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+    </ion-list>
+
+<div style="width: 100%"><p class="forget-pass gray" [navPush]="'forgot-pass'">Esqueceu a senha?</p></div>
+
+<!-- BTN LOGIN -->
+<div class="login-btn" (tap)=goToTutorial()>Entrar</div>
+
+<div style="width: 100%; text-align: center;"><p class="not-registered gray">Não é cadastrado?</p></div>
+
+<!-- BTN REGISTER -->
+<div class="register-btn" [navPush]="'register-page'">Registrar</div>
+
+</div>
+
+
+
+</ion-content>
