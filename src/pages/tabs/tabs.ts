@@ -14,6 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class TabsPage {
 
   tab1Root = 'home-page';
+  tab2Root = 'quiosques-page';
+  tab3Root = 'add-album-page';
 
 
 

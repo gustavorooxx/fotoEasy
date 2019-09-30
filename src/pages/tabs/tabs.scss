@@ -1,7 +1,24 @@
 page-tabs{
 
 
+  .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+    color:#fb8c01;
+  }
 
+  .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+    color:#fb8c01;
+    font-weight: 500;
+  }
 
+  .ion-md-add{
+    line-height: 2.5;
+    background: #fb8c01;
+    color: white !important;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    margin-top: -3px !important;
+  }
 
 }
