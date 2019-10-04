@@ -1,0 +1,27 @@
+page-frete {
+
+  ::placeholder{
+    font-size: 30px
+  }
+
+  .text-input{
+    height: 40px;
+    font-size: 35px;
+  }
+
+  .calcular-btn{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 60px;
+    background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+
+  }
+
+}

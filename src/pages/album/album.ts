@@ -67,6 +67,74 @@ export class AlbumPage {
   }
 
 
+  presentActionSheet2() {
+    const actionSheet = this.actionSheetCtrl.create({
+      title: 'Selecione quantas cópias você deseja para esta foto.',
+
+
+
+      buttons: [
+        {
+          text: 'Nenhuma',
+          role: 'nenhuma',
+          handler: () => {
+            console.log('Nenhuma clicked');
+          }
+        },{
+          text: '1',
+          handler: () => {
+            console.log('1 clicked');
+          }
+        },{
+          text: '2',
+          handler: () => {
+            console.log('2 clicked');
+          }
+        },{
+          text: '3',
+          handler: () => {
+            console.log('3 clicked');
+          }
+        },{
+          text: '5',
+          handler: () => {
+            console.log('5 clicked');
+          }
+        },{
+          text: '10',
+          handler: () => {
+            console.log('10 clicked');
+          },
+        }
+      ]
+    });
+    actionSheet.present();
+  }
+
+  presentActionSheet3() {
+    const actionSheet = this.actionSheetCtrl.create({
+      title: 'O que você deseja fazer?',
+
+
+
+      buttons: [
+        {
+          text: 'Receber Fotos em Casa',
+          role: 'receber Fotos em Casa',
+          handler: () => {
+            this.navCtrl.push('frete-page')
+          }
+        },{
+          text: 'Retirar Fotos no Quiosque',
+          handler: () => {
+            console.log('Quiosque clicked');
+          },
+        }
+      ]
+    });
+    actionSheet.present();
+  }
+
 
 
 }
