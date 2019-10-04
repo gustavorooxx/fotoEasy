@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Nome do álbum</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div>
+
+      <ion-row>
+
+        <ion-col col-4>
+          <div (click)="presentActionSheet()" class="add-photos" style="text-align: center">
+            <p class="add-size orange">+</p>
+            <p class="text-card">ADICIONAR <br>FOTOS</p>
+            </div>
+        </ion-col>
+
+        <ion-col col-4>
+          <div class="add-photos" style="text-align: center">
+
+            <div><img class="img-height" src="../../assets/imgs/fotografia1.png" alt=""></div>
+            <p class="text-copy">1 Cópia</p>
+            <img class="text-copy2" src="../../assets/imgs/icSeta.png" alt="">
+
+            </div>
+
+        </ion-col>
+        <ion-col col-4>
+          <div class="add-photos" style="text-align: center">
+
+            <div><img class="img-height" src="../../assets/imgs/fotografia2.png" alt=""></div>
+            <p class="text-copy">0 cópia</p>
+            <img class="text-copy2" src="../../assets/imgs/icSeta.png" alt="">
+
+            </div>
+        </ion-col>
+      </ion-row>
+
+        </div>
+
+
+
+</ion-content>
+
+<ion-footer >
+<div class="order-value">
+
+</div>
+</ion-footer>
