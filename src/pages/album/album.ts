@@ -127,7 +127,7 @@ export class AlbumPage {
         },{
           text: 'Retirar Fotos no Quiosque',
           handler: () => {
-            console.log('Quiosque clicked');
+            this.navCtrl.push('complete-registration')
           },
         }
       ]

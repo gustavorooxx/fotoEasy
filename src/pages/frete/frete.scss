@@ -1,5 +1,13 @@
 page-frete {
 
+  .scroll-content{
+    background: #f3f3f3;
+  }
+
+  .list-md .item-input:last-child{
+    background: transparent;
+  }
+
   ::placeholder{
     font-size: 30px
   }
