@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Adicionar Cartão de Crédito</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- CREDIT CARD IMAGE -->
+  <div style="margin-top: 5%; text-align: center"><img src="../../assets/imgs/card.png" alt=""></div>
+
+  <!-- INPUTS -->
+
+  <div style="padding: 20px">
+    <ion-list>
+      <ion-item>
+        <ion-icon name='md-camera' item-right></ion-icon>
+        <ion-input type="number" placeholder="Número do cartão"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="text" placeholder="Nome do titular"></ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col col-6>
+          <ion-item>
+            <ion-input type="number" placeholder="Data expedição"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-6 style="margin-top: -4px;">
+          <ion-item>
+            <ion-icon name='ios-card' item-right></ion-icon>
+            <ion-input type="number" placeholder="CVV"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-item>
+        <ion-icon name='md-information-circle' item-right></ion-icon>
+        <ion-input type="text" placeholder="Apelido"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="number" placeholder="CPF"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="number" placeholder="CEP do titular"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <!-- ADD BUTTON -->
+    <div class="add-btn">Adicionar</div>
+
+  </div>
+</ion-content>
