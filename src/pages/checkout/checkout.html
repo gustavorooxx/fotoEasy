@@ -1,0 +1,32 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Confirmação de Pagamento</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<!-- QUANTD DE FOTOS -->
+<div style="text-align: center; margin-top: 20px;"><h6 style="color: gray;">Quantidade de fotos</h6></div>
+<p class="qnt-values">48</p>
+
+<!-- VAlOR REVELAÇÃO-->
+<div style="text-align: center; margin-top: 25px;"><h6 style="color: gray;">Valor da Revelação</h6></div>
+<p class="qnt-values">R$ 108,00</p>
+
+<!-- VALOR DO FRETE -->
+<div style="text-align: center; margin-top: 25px;"><h6 style="color: gray;">Valor do Frete</h6></div>
+<p class="qnt-values">R$ 28,00</p>
+
+<!-- DIVIDER -->
+<div class="divider"></div>
+
+<!-- VALOR TOTAL -->
+<div style="text-align: center; margin-top: 20px"><h6 style="color: gray">VALOR TOTAL</h6></div>
+
+<div style="text-align: center;"><h6 class="total-value"><span class="reais" >R$</span> 108,00</h6></div>
+
+<!-- BTN CONFIRMAR PAGAMENTO -->
+<div [navPush]="'payment-success'" class="confirm-btn">Efetuar Pagamento</div>
+</ion-content>

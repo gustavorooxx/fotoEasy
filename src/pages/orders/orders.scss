@@ -1,0 +1,32 @@
+page-orders {
+
+  .scroll-content{
+    background-color: #f3f3f3;
+  }
+
+  .title-page{
+    position: absolute;
+    margin-top: -23%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+
+  .card-style {
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 23px 20px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 12%;
+    margin-top: 20px;
+  }
+
+  .backgroundImage {
+    background-image: url("../../assets/imgs/foto1.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px 0px 0px 5px;
+    height: 140px;
+  }
+
+}

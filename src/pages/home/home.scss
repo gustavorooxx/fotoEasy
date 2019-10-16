@@ -1,63 +1,65 @@
 page-home {
 
-.title-page{
-  position: absolute;
-  margin-top: -26%;
-  font-size: 30px;
-  font-weight: 500;
-  margin-left: 5px;
-}
+  .scroll-content{
+    background-color: #f3f3f3;
+  }
 
-.question-icon{
+  .title-page {
+    position: absolute;
+    margin-top: -26%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+
+  .question-icon {
     position: absolute;
     margin-top: -20%;
     margin-left: 85%;
-}
-.my-albuns-btn{
-  position: absolute;
-  margin-top: -10%;
-  margin-left: 5%;
-  width: 90%;
-  text-align: center;
-  padding: 12px;
-  text-transform: uppercase;
-  color: white;
-  font-size: 18px;
-  border-radius: 5px;
-  font-weight: 500;
-  height: 60px;
-  background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+  }
+  .my-albuns-btn {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 60px;
+    background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+  }
 
-}
-
-.my-orders{
+  .my-orders {
     color: gray;
     font-weight: 600;
     margin-top: -2%;
-}
+  }
 
-.card-style{
-  border-radius: 10px;
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 23px 20px 0 rgba(0, 0, 0, 0);
-  margin-bottom: 12%;
-}
+  .card-style {
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 23px 20px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 12%;
+  }
 
-.backgroundImage{
-  background-image: url('../../assets/imgs/foto1.png');
-  background-size: cover;
-  background-position: center center;
-  border-radius: 5px 0px 0px 5px;
-  height: 140px;
-}
+  .backgroundImage {
+    background-image: url("../../assets/imgs/foto1.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px 0px 0px 5px;
+    height: 140px;
+  }
 
-.orders-card{
-  height: 100px;
-  background-color: white;
-  margin-top: 50vh;
-  border-radius: 5px;
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 23px 20px 0 rgba(0, 0, 0, 0);
-}
-
+  .orders-card {
+    height: 100px;
+    background-color: white;
+    margin-top: 50vh;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 23px 20px 0 rgba(0, 0, 0, 0);
+  }
 }

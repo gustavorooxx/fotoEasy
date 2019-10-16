@@ -1,0 +1,83 @@
+page-order {
+
+  //HEADER CLASSES
+  ion-header {
+    height: 70px;
+    text-align: center;
+  }
+
+  .toolbar-title {
+    margin-top: 5%;
+    margin-right: 15%;
+    font-size: 17px;
+  }
+
+  ion-icon {
+    font-size: 30px;
+    color: #9c9c9c;
+    margin-left: -90%;
+  }
+
+  .back-button.show-back-button {
+    margin-top: 5%;
+  }
+
+  //////////////////////*****************************////////////////////////////////************************////////////////////////
+
+  .paid{
+    font-size: 20px;
+    margin-top: -5px;
+  }
+
+  .qr-code{
+    font-size: 23px;
+    margin-top: -10px;
+  }
+
+  .qrcode-btn{
+    background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+    height: 40px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  .txt-btn{
+    margin-right: 15px;
+    margin-left: -10px;
+    line-height: 2.7;
+    color: white;
+    font-size: 15px;
+  }
+
+  .icQrcode{
+    width: 17px;
+    position: absolute;
+    margin-top: 11px;
+  }
+
+
+  .add-photos{
+    width: 105px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  .text-copy{
+    font-size: 12px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 2px;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+
+  .img-height{
+    height: 125px;
+    width: 105px;
+  }
+}

@@ -11,7 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MeusAlbunsPage {
 
-  step = 0;
+  step = 1;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

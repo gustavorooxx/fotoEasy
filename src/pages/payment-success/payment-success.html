@@ -1,0 +1,52 @@
+
+
+<ion-content>
+
+<div class="close-btn" [navPush]="'orders-page'"><ion-icon  md="md-close"></ion-icon></div>
+
+<div *ngIf="purchaseType == 'quiosque'">
+<!-- SUCCESS IMG -->
+<div style="text-align: center;margin-top: 10px;"><img src="../../assets/imgs/icSuccess.png" alt=""></div>
+
+<!-- SUCCESS TITLE -->
+<div style="text-align: center"><h3>Compra efetuada com <br>sucesso!</h3></div>
+<!-- SUCCESS MESSAGE -->
+<div  class="success-msg" >
+  <p>Para revelar suas fotos vá até um de nossos <br>
+     Quiosques mais próximo de você e informe o <br>
+     Código ou apresente o QR Code no Totem.
+  </p>
+</div>
+
+<!-- TOTEM IMAGE -->
+<div style="margin-top: 30px; text-align: center;"> <img src="../../assets/imgs/img3.png" > </div>
+
+<!-- VER QUIOSQUES BTN  -->
+<div (tap)="goToQuiosques()" class="see-kiosks">Ver Quiosques</div>
+
+
+
+
+</div>
+
+<div *ngIf="purchaseType == 'delivery'">
+
+  <!-- SUCCESS IMG -->
+<div style="text-align: center;margin-top: 10px;"><img src="../../assets/imgs/icSuccess.png" alt=""></div>
+
+<!-- SUCCESS TITLE -->
+<div style="text-align: center"><h3>Compra efetuada com <br>sucesso!</h3></div>
+<!-- SUCCESS MESSAGE -->
+<div  class="success-msg" >
+  <p>A estimativa para o envio das suas fotos é de
+    <br>3 dias úteis.
+  </p>
+</div>
+
+<!-- VER QUIOSQUES BTN  -->
+<div (tap)="goToOrders()" class="see-kiosks">Ver meus pedidos</div>
+
+
+</div>
+
+</ion-content>

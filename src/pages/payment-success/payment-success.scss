@@ -1,0 +1,35 @@
+page-payment-success {
+
+  .scroll-content{
+    background-color: #dddddd;
+  }
+
+  .close-btn{
+    color: #999999;
+    padding: 25px 25px 10px 25px;
+    font-size: 20px;
+  }
+
+  .success-msg{
+    color: #666666;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .see-kiosks{
+    margin-left: 2.5%;
+    width: 95%;
+    text-align: center;
+    margin-top: 10%;
+    padding: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 60px;
+    background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+
+  }
+
+}
