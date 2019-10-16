@@ -1,0 +1,47 @@
+page-profile {
+
+  .title-page{
+    position: absolute;
+    margin-top: -23%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+
+  .scroll-content{
+    background: #f3f3f3;
+  }
+
+  .avatar-style{
+    width: 25%;
+    height: 90px;
+    margin-left: 37.5%;
+    margin-top: 10%;
+    border: 2px solid #aaaaaa;
+    border-radius: 50%;
+    background-image: url(../../assets/imgs/avatar.png);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .position-btn{
+    display: inline-flex;
+    padding: 15px 20px 0px 25px;
+    width: 100%;
+  }
+
+  .txt-btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.1;
+    width: 100%;
+  }
+
+  .icEdit{
+    text-align: right;
+    width: 100%;
+  }
+
+
+}

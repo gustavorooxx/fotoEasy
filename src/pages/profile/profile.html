@@ -1,0 +1,31 @@
+<ion-content>
+
+  <app-header></app-header>
+  <!-- TITLE PAGE -->
+  <h1 padding class="title-page">Perfil</h1>
+
+  <!-- AVATAR PHOTO -->
+  <div class="avatar-style"> </div>
+
+  <!-- BUTTONS -->
+
+  <!-- MEUS DADOS -->
+  <div class="position-btn" [navPush]="'edit-profile'">
+    <div class="txt-btn">Meus Dados</div>
+    <div class="icEdit"><img src="../../assets/imgs/edit.png"></div>
+  </div>
+  <!-- FORMA DE PAGAMENTO  -->
+  <div class="position-btn">
+    <div class="txt-btn">Forma de Pagamento</div>
+    <div class="icEdit"><img src="../../assets/imgs/edit.png"></div>
+  </div>
+
+  <!-- FORMA DE PAGAMENTO  -->
+  <div class="position-btn">
+    <div class="txt-btn">Alterar Senha</div>
+    <div class="icEdit"><img src="../../assets/imgs/edit.png"></div>
+  </div>
+
+  <!-- SAIR -->
+  <div class="txt-btn" style=" padding: 15px 20px 0px 25px;">Sair</div>
+ </ion-content>

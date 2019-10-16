@@ -17,6 +17,7 @@ export class TabsPage {
   tab2Root = 'quiosques-page';
   tab3Root = 'add-album-page';
   tab4Root = 'orders-page';
+  tab5Root = 'profile-page';
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

@@ -1,0 +1,66 @@
+page-edit-profile {
+
+  //HEADER CLASSES
+  ion-header {
+    height: 70px;
+    text-align: center;
+  }
+
+  .toolbar-title {
+    margin-top: 5%;
+    margin-right: 15%;
+    font-size: 17px;
+  }
+
+  ion-icon {
+    font-size: 30px;
+    color: #9c9c9c;
+    margin-left: -90%;
+  }
+
+  .back-button.show-back-button {
+    margin-top: 5%;
+  }
+
+  //////////////////////*****************************////////////////////////////////************************////////////////////////
+
+  .scroll-content{
+    background-color: #f3f3f3;
+  }
+
+  .edit-avatar{
+    width: 25%;
+    height: 95px;
+    border-radius: 50%;
+    margin-left: 37.5%;
+    margin-top: 5%;
+    background-image: url('../../assets/imgs/imgAvatar.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  ion-list{
+    padding: 20px 25px 5px 15px;
+  }
+
+
+  .item-block{
+    background: transparent !important;
+  }
+
+  .save-btn{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 60px;
+    background-image: linear-gradient(to right, #fb8c00, #ffbe5d);
+    margin-bottom: 30px;
+
+  }
+}
