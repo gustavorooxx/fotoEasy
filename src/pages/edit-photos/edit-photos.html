@@ -1,0 +1,314 @@
+<ion-content>
+
+  <!-- BOTÕES -->
+  <div style="padding: 40px 10px 5px 10px;">
+
+    <ion-row>
+
+      <ion-col col-4>
+        <!-- BOTÃO FECHAR EDIÇÃO -->
+        <img src="../../assets/imgs/btnFecharEdit.png" alt="">
+      </ion-col>
+
+      <ion-col col-4>
+        <!-- BOTÃO RETORNAR EDIÇÃO -->
+      <div style="display: inline-flex;">
+      <div>
+        <img style="margin-top: -3px;" src="../../assets/imgs/btnDesfazer.png" alt="">
+       </div>
+
+       <div>
+         <img style="margin-top: -3px; margin-left: 60px;" src="../../assets/imgs/btnDesfazerVoltar.png" alt="">
+       </div>
+      </div>
+      </ion-col>
+
+      <ion-col col-4 style="text-align: right;">
+        <!-- BOTÃO CONCLUIR EDIÇÃO -->
+        <img src="../../assets/imgs/btnFeito.png" alt="">
+      </ion-col>
+
+    </ion-row>
+
+  </div>
+
+  <!-- FOTO -->
+  <div class="photo-content">
+
+  </div>
+
+  <!-- /////////////////////// INICIO AJUSTE OPTIONS VIEW /////////////////////////////////////////////// -->
+  <div *ngIf="tabSelected == 'ajuste'">
+
+    <!-- VIRAR -->
+    <div style="text-align: center; color: white; margin-top: 7%;" *ngIf="btnsAjuste == ''">
+      <h6>Girar</h6>
+      <!-- BTN/ICON -->
+      <div style="margin-top: 5%;"><img src="../../assets/imgs/icGirar.png"></div>
+    </div>
+
+
+    <!-- BRILHO -->
+    <div style="text-align: center;color: white; margin-top: 7%;" *ngIf="btnsAjuste == 'brilho'">
+      <h6>Brilho</h6>
+      <div>
+        <ion-item style="background: transparent !important;">
+          <ion-range [(ngModel)]="brightness">
+            <ion-icon range-left small name="sunny" style="color: white;"></ion-icon>
+            <ion-icon range-right name="sunny" style="color: white;"></ion-icon>
+          </ion-range>
+        </ion-item>
+      </div>
+    </div>
+
+  </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+  <!-- /////////////////////// INICIO TEXTO OPTIONS VIEW /////////////////////////////////////////////// -->
+  <div *ngIf="tabSelected == 'texto'">
+
+    <!-- COR -->
+
+
+  </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+</ion-content>
+
+<ion-footer style="background: #555555;">
+  <!-- OPTIONS -->
+
+  <!-- AJUSTE OPTIONS -->
+  <div class="align-btns1" *ngIf="tabSelected == 'ajuste'">
+
+    <div (tap)="btnsAjuste = ''" [class.active]="btnsAjuste == ''" class="width btns1">
+      <img src="../../assets/imgs/ic-virar-ativo.svg">
+    </div>
+
+    <div (tap)="btnsAjuste = 'contraste'" [class.active]="btnsAjuste == 'contraste'" class="width btns1">
+      <img src="../../assets/imgs/ic-ajuste-contraste-ativo.svg">
+    </div>
+
+    <div (tap)="btnsAjuste = 'nitidez'" [class.active]="btnsAjuste == 'nitidez'" class="width btns1">
+      <img src="../../assets/imgs/ic-ajuste-nitidez-ativo.svg">
+    </div>
+
+    <div (tap)="btnsAjuste = 'brilho'" [class.active]="btnsAjuste == 'brilho'" class="width btns1">
+      <img src="../../assets/imgs/ic-ajuste-brilho-ativo.svg">
+    </div>
+
+    <div (tap)="btnsAjuste = 'imagem'" [class.active]="btnsAjuste == 'imagem'" class="width btns1">
+      <img src="../../assets/imgs/ic-ajuste-imagem-ativo.svg">
+    </div>
+  </div>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- TEXTO OPTIONS -->
+
+  <div class="align-btns1" *ngIf="tabSelected == 'texto'">
+
+    <div (tap)="btnsTexto = ''" [class.active]="btnsTexto == ''" class="width btns1">
+      <img src="../../assets/imgs/ic-texto-tipografia-ativo.svg">
+    </div>
+
+    <div (tap)="btnsTexto = 'tamanho'" [class.active]="btnsTexto == 'tamanho'" class="width btns1">
+      <img src="../../assets/imgs/ic-texto-tamanho-ativo.svg">
+    </div>
+
+    <div (tap)="btnsTexto = 'data'" [class.active]="btnsTexto == 'data'" class="width btns1">
+      <img src="../../assets/imgs/ic-texto-data-ativo.svg">
+    </div>
+
+    <div (tap)="btnsTexto = 'cor'" [class.active]="btnsTexto == 'cor'" class="width btns1">
+      <img src="../../assets/imgs/ic-texto-cor-ativo.svg">
+    </div>
+
+    <div (tap)="btnsTexto = 'girar'" [class.active]="btnsTexto == 'girar'" class="width btns1">
+      <img src="../../assets/imgs/ic-texto-girar-ativo.svg">
+    </div>
+  </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- FILTRO OPTIONS -->
+  <div *ngIf="tabSelected == 'filtro'">
+    <ion-scroll scrollX="true" style="white-space:nowrap; height: 100px">
+      <div class="align-box">
+
+
+        <div>
+          <div class="filter-card">
+          </div>
+          <div class="name-position">
+            <small class="tool-name" (tap)="btnsFiltro = ''" [class.active]="btnsFiltro == ''">Original</small>
+          </div>
+        </div>
+
+        <div>
+          <div class="filter-card">
+          </div>
+          <div class="name-position">
+            <small class="tool-name">Original</small>
+          </div>
+        </div>
+
+        <div>
+          <div class="filter-card">
+          </div>
+          <div class="name-position">
+            <small class="tool-name">Original</small>
+          </div>
+        </div>
+
+        <div>
+          <div class="filter-card">
+
+          </div>
+          <div class="name-position">
+            <small class="tool-name">Original</small>
+          </div>
+        </div>
+
+
+
+      </div>
+    </ion-scroll>
+  </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- MOLDURA OPTIONS -->
+  <div *ngIf="tabSelected == 'moldura'">
+      <ion-scroll scrollX="true" style="white-space:nowrap; height: 100px">
+        <div class="align-box">
+
+
+          <div>
+            <!-- CARD -->
+            <div class="filter-card">
+            </div>
+
+            <div class="name-position">
+              <small class="tool-name" (tap)="btnsMoldura = ''" [class.active]="btnsMoldura == ''">Moldura 1</small>
+            </div>
+          </div>
+
+          <div>
+            <div class="filter-card">
+            </div>
+            <div class="name-position">
+              <small class="tool-name">Moldura 2</small>
+            </div>
+          </div>
+
+          <div>
+            <div class="filter-card">
+            </div>
+            <div class="name-position">
+              <small class="tool-name">Moldura 3</small>
+            </div>
+          </div>
+
+          <div>
+            <div class="filter-card">
+
+            </div>
+            <div class="name-position">
+              <small class="tool-name">Moldura 4</small>
+            </div>
+          </div>
+
+
+
+        </div>
+      </ion-scroll>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- MOLDURA OPTIONS -->
+  <div *ngIf="tabSelected == 'estilo'">
+      <ion-scroll scrollX="true" style="white-space:nowrap; height: 100px">
+        <div class="align-box">
+
+
+          <div>
+            <!-- ESTILO IMG -->
+            <div style="width: 100px;">
+              <img src="../../assets/imgs/imgEstilo.png" alt="">
+            </div>
+
+            <div class="name-position-estilo">
+              <small class="tool-name" (tap)="btnsEstilo = ''" [class.active]="btnsEstilo == ''"> Meu estilo</small>
+            </div>
+          </div>
+
+          <div>
+
+              <div style="width: 100px;">
+                  <img src="../../assets/imgs/imgEstilo.png" alt="">
+                </div>
+
+            <div class="name-position-estilo">
+              <small class="tool-name">Estilo X</small>
+            </div>
+          </div>
+
+          <div>
+
+              <div style="width: 100px;">
+                  <img src="../../assets/imgs/imgEstilo.png" alt="">
+                </div>
+
+            <div class="name-position-estilo">
+              <small class="tool-name">Estilo Z</small>
+            </div>
+          </div>
+
+          <div>
+
+              <div style="width: 100px;">
+                  <img src="../../assets/imgs/imgEstilo.png" alt="">
+                </div>
+
+            <div class="name-position-estilo">
+              <small class="tool-name">Melhor estilo</small>
+            </div>
+          </div>
+
+
+        </div>
+      </ion-scroll>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- TOOLS -->
+  <div class="align-btns">
+
+    <!-- AJUSTE -->
+    <div (tap)="tabSelected = 'ajuste'" class="width" [class.active]="tabSelected == 'ajuste'">
+      <img class="img-tool" [class.active]="tabSelected == 'ajuste'" src="../../assets/imgs/ic-ajuste-ativo.svg">
+      <p class="tool-name" [class.active]="tabSelected == 'ajuste'">Ajuste</p>
+    </div>
+    <!-- TEXTO  -->
+    <div (tap)="tabSelected = 'texto'" class="width" [class.active]="tabSelected == 'texto'">
+      <img class="img-tool" [class.active]="tabSelected == 'texto'" src="../../assets/imgs/ic-texto-ativo.svg">
+      <p class="tool-name" [class.active]="tabSelected == 'texto'">Texto</p>
+    </div>
+    <!-- FILTRO -->
+    <div (tap)="tabSelected = 'filtro'" class="width" [class.active]="tabSelected == 'filtro'">
+      <img class="img-tool" [class.active]="tabSelected == 'filtro'" src="../../assets/imgs/ic-filtro-ativo.svg">
+      <p class="tool-name" [class.active]="tabSelected == 'filtro'">Filtro</p>
+    </div>
+    <!-- MOLDURA -->
+    <div (tap)="tabSelected = 'moldura'" class="width" [class.active]="tabSelected == 'moldura'">
+      <img class="img-tool" [class.active]="tabSelected == 'moldura'" src="../../assets/imgs/ic-moldura-ativo.svg">
+      <p class="tool-name" [class.active]="tabSelected == 'moldura'">Moldura</p>
+    </div>
+    <!-- ESTILO -->
+    <div (tap)="tabSelected = 'estilo'" class="width" [class.active]="tabSelected == 'estilo'">
+      <img class="img-tool" [class.active]="tabSelected == 'estilo'" src="../../assets/imgs/ic-estilo-ativo.svg">
+      <p class="tool-name" [class.active]="tabSelected == 'estilo'">Estilo</p>
+    </div>
+
+  </div>
+</ion-footer>
